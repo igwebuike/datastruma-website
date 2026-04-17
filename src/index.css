@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #020617;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar-cta {
+  background-size: 200% 200%;
+  animation: navbarGradientShift 6s ease infinite;
+}
+
+.navbar-cta {
+  background-size: 200% 200%;
+  animation: navbarGradientShift 6s ease infinite;
+}
+
+.navbar-cta:hover {
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.35),
+    0 0 40px rgba(163, 230, 53, 0.18);
+}
+
+@keyframes navbarGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

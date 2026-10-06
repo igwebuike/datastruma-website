@@ -7,7 +7,7 @@ import { resolve } from "node:path";
 // unless an SPA rewrite is configured in the Render dashboard. This plugin
 // makes each React Router route directly addressable by publishing a copy of
 // the built index.html at /<route>/index.html as well.
-const spaRoutes = ["capabilities", "offerings", "solutions", "ventures", "about", "contact"];
+const spaRoutes = ["capabilities", "pilot", "evaluators", "delivery-standards", "offerings", "solutions", "ventures", "about", "contact"];
 
 function staticRouteFallbacks() {
   return {

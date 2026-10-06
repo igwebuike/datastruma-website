@@ -8,6 +8,9 @@ import Ventures from "./pages/Ventures";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Capabilities from "./pages/Capabilities";
+import Pilot from "./pages/Pilot";
+import Evaluators from "./pages/Evaluators";
+import DeliveryStandards from "./pages/DeliveryStandards";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -21,6 +24,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/capabilities" element={<Capabilities />} />
+          <Route path="/pilot" element={<Pilot />} />
+          <Route path="/evaluators" element={<Evaluators />} />
+          <Route path="/delivery-standards" element={<DeliveryStandards />} />
           <Route path="/offerings" element={<Offerings />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/ventures" element={<Ventures />} />

@@ -16,6 +16,7 @@ export const companyInfo = {
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "AI Data & Model Ops", href: "/capabilities" },
+  { label: "Pilot", href: "/pilot" },
   { label: "Services", href: "/offerings" },
   { label: "Ventures", href: "/ventures" },
   { label: "About", href: "/about" },

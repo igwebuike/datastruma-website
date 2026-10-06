@@ -1,63 +1,16 @@
-import SectionLabel from "../components/ui/SectionLabel";
 import { companyInfo } from "../data/siteData";
+import SectionLabel from "../components/ui/SectionLabel";
 
 export default function About() {
-  const points = [
-    "Professional presentation and premium positioning",
-    "Broader offerings beyond one partnership or one toolset",
-    "AI, automation, analytics, and digital ventures under one umbrella",
-    "A strong base for future expansion and client trust"
-  ];
-
   return (
-    <section className="mx-auto w-full max-w-7xl px-4 pb-14 pt-14 md:px-6 lg:px-8 lg:pt-20">
-      <SectionLabel>About Datastruma</SectionLabel>
-
-      <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-5 shadow-2xl shadow-black/10">
-          <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-900">
-            <img
-              src={companyInfo.founderImagePath}
-              alt="Eugene Ebem founder"
-              className="h-full min-h-[520px] w-full object-cover"
-            />
-          </div>
-        </div>
-
-        <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-7 shadow-2xl shadow-black/10 backdrop-blur">
-          <h1 className="text-4xl font-black tracking-tight md:text-6xl">
-            Founder and company story
-          </h1>
-
-          <p className="mt-5 text-lg leading-8 text-slate-300">
-            Eugene Ebem is the founder behind Datastruma LLC and its broader
-            ecosystem of ventures. The company is built to present a modern,
-            premium, and practical technology offering that goes beyond a single
-            product line or one narrow service category.
-          </p>
-
-          <p className="mt-4 text-lg leading-8 text-slate-300">
-            Datastruma combines cloud thinking, AI possibilities, automation
-            systems, analytics enablement, and digital venture development into
-            a more complete professional platform for business growth.
-          </p>
-
-          <div className="mt-6 grid gap-3 md:grid-cols-2">
-            {points.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm leading-7 text-slate-200"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm leading-7 text-slate-300">
-            <strong className="text-white">Established:</strong>{" "}
-            {companyInfo.established}
-          </div>
-        </div>
+    <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 lg:px-8 lg:py-24">
+      <SectionLabel>About</SectionLabel>
+      <h1 className="mt-5 text-4xl font-black tracking-tight md:text-5xl">About Datastruma LLC</h1>
+      <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">Datastruma LLC is a premium technology company focused on cloud, AI, automation, analytics, logistics technology, and digital venture building.</p>
+      <div className="mt-10 rounded-[2rem] border border-white/10 bg-white/[0.045] p-7 backdrop-blur-xl">
+        <h2 className="text-2xl font-extrabold">Founder-led execution</h2>
+        <p className="mt-3 text-slate-300 leading-8">Led by Eugene Ezenwa Ebem, Datastruma combines enterprise data architecture experience with practical AI product development and business automation delivery.</p>
+        <p className="mt-4 text-slate-400">{companyInfo.established}</p>
       </div>
     </section>
   );

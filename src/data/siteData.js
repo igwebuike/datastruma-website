@@ -1,18 +1,10 @@
 import {
-  Brain,
-  Briefcase,
-  Building2,
-  Cloud,
-  Cpu,
-  Globe,
-  LineChart,
-  Network,
-  ShieldCheck
+  Brain, Briefcase, Building2, Cloud, Cpu, Globe, LineChart, Network, ShieldCheck
 } from "lucide-react";
 
 export const companyInfo = {
   name: "Datastruma LLC",
-  tagline: "Cloud, AI, automation, analytics, and digital ventures",
+  tagline: "Cloud, AI, data, model operations, automation, analytics, and digital ventures",
   email: "eugene.ebem@datastruma.com",
   phone: "512-999-0995",
   address: "219 Columbine Drive, Wylie, Texas 75098",
@@ -23,6 +15,7 @@ export const companyInfo = {
 
 export const navItems = [
   { label: "Home", href: "/" },
+  { label: "AI Data & Model Ops", href: "/capabilities" },
   { label: "Services", href: "/offerings" },
   { label: "Ventures", href: "/ventures" },
   { label: "About", href: "/about" },
@@ -30,164 +23,61 @@ export const navItems = [
 ];
 
 export const homeHighlights = [
-  {
-    title: "AI-forward",
-    description:
-      "We bring AI into practical business use cases, not hype-only positioning.",
-    icon: Brain
-  },
-  {
-    title: "Multi-venture",
-    description:
-      "A connected ecosystem across automation, analytics, community, and workforce technology.",
-    icon: Network
-  },
-  {
-    title: "Execution-led",
-    description:
-      "Professional, founder-led delivery focused on outcomes, clarity, and long-term value.",
-    icon: Briefcase
-  }
+  { title: "AI-ready", description: "Human evaluation, training-data operations, model QA, and practical AI delivery.", icon: Brain },
+  { title: "Managed delivery", description: "U.S.-based oversight with qualified, scalable delivery talent in Nigeria.", icon: Network },
+  { title: "Quality-led", description: "Calibration, reviewer QA, acceptance criteria, and measurable delivery.", icon: Briefcase }
 ];
 
 export const offerings = [
-  {
-    icon: Cloud,
-    title: "Cloud and digital infrastructure",
-    description:
-      "Modern business technology foundations including cloud stack guidance, software selection, and scalable digital setup."
-  },
-  {
-    icon: Cpu,
-    title: "AI and automation systems",
-    description:
-      "Practical AI workflows, operational automations, CRM enablement, lead routing, and smart process design for growing businesses."
-  },
-  {
-    icon: LineChart,
-    title: "Analytics and enablement",
-    description:
-      "Reporting, business analysis, learning programs, and decision support designed to make data useful and actionable."
-  },
-  {
-    icon: ShieldCheck,
-    title: "Business technology advisory",
-    description:
-      "Premium guidance across tools, systems, workflows, and execution so organizations can move with more confidence and control."
-  }
+  { icon: Brain, title: "AI Data & Model Operations", description: "Human evaluation, preference data, model QA, post-training support, coding/STEM evaluation, multilingual evaluation, and human-in-the-loop validation." },
+  { icon: Cloud, title: "Cloud and digital infrastructure", description: "Modern cloud, data, software, and scalable digital foundations." },
+  { icon: Cpu, title: "AI and automation systems", description: "Practical AI workflows, operational automation, integrations, and smart process design." },
+  { icon: LineChart, title: "Analytics and enablement", description: "Reporting, business analysis, learning programs, and decision support." },
+  { icon: ShieldCheck, title: "Business technology advisory", description: "Guidance across tools, systems, workflows, governance, and execution." }
 ];
 
 export const solutions = [
-  {
-    title: "Business modernization",
-    text: "We help organizations upgrade from disconnected tools to a cleaner, more scalable digital operating model.",
-    bullets: ["Technology stack review", "Workflow improvement", "Execution roadmap"]
-  },
-  {
-    title: "AI-powered operations",
-    text: "We bring AI into practical business use cases like intake, communication, task routing, customer engagement, and internal workflows.",
-    bullets: ["AI workflow design", "Automation opportunities", "Operational efficiency"]
-  },
-  {
-    title: "Client growth systems",
-    text: "From lead capture to follow-up and customer lifecycle flows, we help businesses build systems that support revenue growth.",
-    bullets: ["CRM enablement", "Lead automation", "Customer journey logic"]
-  }
+  { title: "Business modernization", text: "Upgrade disconnected tools into a cleaner, scalable operating model.", bullets: ["Technology stack review","Workflow improvement","Execution roadmap"] },
+  { title: "AI-powered operations", text: "Bring AI into practical workflows and customer or internal operations.", bullets: ["AI workflow design","Automation opportunities","Operational efficiency"] },
+  { title: "Client growth systems", text: "Build systems that support lead capture, follow-up, and lifecycle growth.", bullets: ["CRM enablement","Lead automation","Customer journey logic"] }
 ];
 
 export const ventures = [
-  {
-    title: "Confluxa",
-    category: "AI, automation, CRM",
-    description:
-      "A focused business automation and CRM solution helping service businesses operate smarter, respond faster, and scale with more structure."
-  },
-  {
-    title: "Everyday Analyst Hub",
-    category: "Analytics education and community",
-    description:
-      "A practical learning and growth ecosystem that helps people become stronger analysts and more confident problem-solvers in the real world.",
-    href: "https://www.everydayanalystshub.com/",
-    cta: "Visit main site"
-  },
-  {
-    title: "Everyday Analysts Hub on Skool",
-    category: "Community platform",
-    description:
-      "A community experience built for ongoing learning, collaboration, accountability, and applied analytics development.",
-    href: "https://www.skool.com/everyday-analysts-hub",
-    cta: "Join on Skool"
-  },
-  {
-    title: "JobFlowAI",
-    category: "Workforce technology",
-    description:
-      "A technology-driven initiative focused on improving job search, job application flow, and career efficiency with smarter automation."
-  },
-  {
-    title: "Tagus Technologies",
-    category: "Innovation and consulting",
-    description:
-      "A venture focused on digital solutions, enterprise value creation, and practical technology-led innovation."
-  }
+  { title: "Confluxa", category: "AI, automation, CRM", description: "Business automation and CRM for service businesses." },
+  { title: "Everyday Analyst Hub", category: "Analytics education and community", description: "Practical analytics learning and professional development.", href: "https://www.everydayanalystshub.com/", cta: "Visit main site" },
+  { title: "Everyday Analysts Hub on Skool", category: "Community platform", description: "Ongoing learning, collaboration, and applied analytics development.", href: "https://www.skool.com/everyday-analysts-hub", cta: "Join on Skool" },
+  { title: "JobFlowAI", category: "Workforce technology", description: "Technology for smarter job-search and career workflows." },
+  { title: "Tagus Technologies", category: "Innovation and consulting", description: "Digital solutions, enterprise value creation, and technology-led innovation." }
 ];
 
 export const industries = [
-  "Small and medium-sized businesses",
-  "Professional services firms",
-  "Founders and operators",
-  "Training and education brands",
-  "Growing digital ventures",
-  "Organizations modernizing internal operations"
+  "AI labs and model teams","AI product companies","Cloud and data organizations",
+  "Professional services firms","Training and education brands","Organizations modernizing internal operations"
 ];
 
-export const ecosystemTags = [
-  "Datastruma",
-  "Confluxa",
-  "Everyday Analyst Hub",
-  "JobFlowAI",
-  "Tagus Technologies"
-];
-
+export const ecosystemTags = ["Datastruma","Confluxa","Everyday Analyst Hub","JobFlowAI","Tagus Technologies"];
 export const capabilityTiles = [
-  { title: "Cloud and software", icon: Globe },
-  { title: "AI and automation", icon: Brain },
-  { title: "Analytics and learning", icon: LineChart },
-  { title: "Digital ventures", icon: Building2 }
+  { title: "AI data & model ops", icon: Brain }, { title: "Cloud & software", icon: Globe },
+  { title: "AI & automation", icon: Cpu }, { title: "Analytics & learning", icon: LineChart }
 ];
-
-export const pax8SupportPoints = [
-  "Software stack access and guidance",
-  "Cloud marketplace leverage for client solutions",
-  "Recurring service and support opportunities",
-  "A stronger delivery model when paired with automation and advisory work"
-];
-
+export const pax8SupportPoints = [];
 export const contactHighlights = [
-  "Premium digital business positioning",
-  "AI and automation opportunities",
-  "Cloud and systems guidance",
-  "CRM and workflow enablement",
-  "Analytics, education, and venture ecosystem support"
+  "AI data and model operations","No-cost pilot evaluation","Cloud and systems guidance",
+  "AI and automation opportunities","Analytics and venture ecosystem support"
+];
+export const testimonials = [
+  { quote: "Datastruma brought a level of structure, clarity, and premium thinking that made our digital direction feel far more mature.", name: "Operations Leader", company: "Professional Services Firm" },
+  { quote: "What stood out was the blend of strategy and execution. The recommendations were practical, modern, and growth-oriented.", name: "Founder", company: "Growing Service Business" },
+  { quote: "The positioning, systems thinking, and automation lens gave us a much stronger foundation than we had before.", name: "Business Owner", company: "Digital Venture" }
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Datastruma brought a level of structure, clarity, and premium thinking that made our digital direction feel far more mature.",
-    name: "Operations Leader",
-    company: "Professional Services Firm"
-  },
-  {
-    quote:
-      "What stood out was the blend of strategy and execution. The recommendations were practical, modern, and growth-oriented.",
-    name: "Founder",
-    company: "Growing Service Business"
-  },
-  {
-    quote:
-      "The positioning, systems thinking, and automation lens gave us a much stronger foundation than we had before.",
-    name: "Business Owner",
-    company: "Digital Venture"
-  }
+export const bookingUrl = "https://calendar.app.google/La6TMLPD7LG4aCFa6";
+
+export const services = [
+  { title: "AI data and model operations", icon: Brain },
+  { title: "Human evaluation and preference data", icon: Network },
+  { title: "Cloud and data platforms", icon: Cloud },
+  { title: "AI and workflow automation", icon: Cpu },
+  { title: "Operational dashboards and analytics", icon: LineChart },
+  { title: "Secure technology delivery", icon: ShieldCheck }
 ];

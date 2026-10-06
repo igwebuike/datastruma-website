@@ -22,10 +22,6 @@ body {
 a {
   text-decoration: none;
 }
-.navbar-cta {
-  background-size: 200% 200%;
-  animation: navbarGradientShift 6s ease infinite;
-}
 
 .navbar-cta {
   background-size: 200% 200%;
